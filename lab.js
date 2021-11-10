@@ -6,7 +6,7 @@
   If it is not, console log "Coding has its challenges."
 */
 const lovesCode = true
-if (lovesCode == true){
+if (lovesCode === true){
   console.log("I love to code!")
 }else{
   console.log("Coding has its challenges")
@@ -39,7 +39,7 @@ if (amysAge > brittanisAge){
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-if (amysBirthYear == brittanisBirthYear){
+if (amysBirthYear === bbrittanisBirthYear){
   console.log('Amy & Brittani were born in the same year')
 }else{
   console.log('Amy & Brittani were not born in the same year')
@@ -56,15 +56,15 @@ let rain = false
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-if (temperature >= 80 && rain == true){
+if (temperature >= 80 && rain === true){
   console.log("You should wear a T-shirt and take an umbrella!")
-}else if (temperature > 60 && temperature < 80 && rain == true){
+}else if (temperature > 60 && temperature < 80 && rain === true){
   console.log("You should wear a rain-jacket")
-}else if (temperature <= 60 && rain == true){
+}else if (temperature <= 60 && rain === true){
   console.log("You should wear a jacket and carry an umbrella")
-}else if (temperature <=60 && rain == false){
+}else if (temperature <=60 && rain === false){
   console.log("You should wear some warm jacket with a scarf!")
-}else if (temperature >= 80 && rain == false){
+}else if (temperature >= 80 && rain === false){
   console.log("Stay light! Stick with a T-Shirt!")
 }
 
@@ -125,7 +125,7 @@ while (score < passingScore){
 
 let changeMyMind = true
 
-if (changeMyMind == true){
+if (changeMyMind === true){
   changeMyMind = false
 }else{
   changeMyMind = true
@@ -141,10 +141,11 @@ console.log(changeMyMind)
 
 ////////// PROBLEM 11 //////////
 
-let z = 5
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
-while (z>0){
+// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
+let z = 5
+
+while (z > 0){
   for(let i=z; i>0; i--){
     console.log(i)
   } 
